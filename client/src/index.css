@@ -55,7 +55,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -91,21 +91,85 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-300;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Custom scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/60 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/80;
   }
 }
 
 @layer components {
   .glass-card {
-    @apply bg-white/70 backdrop-blur-md border border-white/20 rounded-xl shadow-lg;
+    @apply bg-white/70 backdrop-blur-md border border-white/20 rounded-xl shadow-lg dark:bg-gray-800/70 dark:border-gray-700/30;
   }
   
   .gradient-text {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-finance-blue to-finance-green-dark;
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-finance-blue to-finance-green-dark dark:from-blue-400 dark:to-green-400;
   }
 
   .privacy-badge {
-    @apply inline-flex items-center text-xs font-medium px-2 py-1 rounded-full bg-finance-blue-light text-finance-blue-dark;
+    @apply inline-flex items-center text-xs font-medium px-2 py-1 rounded-full bg-finance-blue-light text-finance-blue-dark dark:bg-blue-900 dark:text-blue-200;
+  }
+
+  /* Mobile sidebar animation */
+  .mobile-sidebar {
+    @apply fixed top-0 left-0 h-full w-0 bg-white dark:bg-gray-900 overflow-x-hidden z-50 transition-all duration-300 ease-in-out;
+  }
+
+  .mobile-sidebar.open {
+    @apply w-[80%] max-w-[300px] shadow-xl;
+  }
+
+  /* Button animation on hover */
+  .btn-arrow-hover svg {
+    @apply transition-transform duration-300;
+  }
+
+  .btn-arrow-hover:hover svg {
+    @apply translate-x-1;
+  }
+
+  /* Dark mode specific styles */
+  .dark .feature-icon {
+    @apply bg-blue-900/50 text-blue-400;
+  }
+  
+  .dark .feature-card-icon {
+    @apply bg-blue-900/30;
+  }
+  
+  .dark .about-icon-bg {
+    @apply bg-blue-900/30 text-blue-400;
+  }
+  
+  .dark .ai-advisor-bg {
+    @apply bg-gray-800/70;
+  }
+  
+  .dark .ai-message {
+    @apply bg-gray-700;
+  }
+  
+  .dark .privacy-icon {
+    @apply text-green-400;
+  }
+  
+  .dark .privacy-check {
+    @apply bg-green-900/30 text-green-400;
   }
 }
