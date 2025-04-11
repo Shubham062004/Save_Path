@@ -49,6 +49,10 @@ app.use((err, req, res, next) => {
   });
 });
 
+app.get('/', (req, res) => {
+    return res.send("It's working 🙌")
+  })
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
