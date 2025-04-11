@@ -78,7 +78,7 @@ We believe **your data is yours**.
 ## 🙌 Contributors
 
 - **Bangari Vivekraj** ([@vivekraj2205](https://github.com/vivekraj2205))
-📩 **Email**: your.email@example.com  
+📩 **Email**: bangarivivekraj@gmail.com  
 - **Shubham Kumar Chaurasia** ([@shubham062004](https://github.com/shubham062004))  
 📩 **Email**: shubhamkumar081908@gmail.com
 
