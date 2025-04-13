@@ -1,4 +1,4 @@
-# 💸 Financial Time Machine
+# 💸 Save Path
 
 **Visualize your money’s past, present, and possible futures.**  
 A privacy-first, AI-powered personal finance tool that helps you make smarter financial decisions through simulations, behavioral analytics, and predictive planning.
@@ -75,13 +75,12 @@ We believe **your data is yours**.
 
 ---
 
-## 🙌 Contributors
-
-- **Bangari Vivekraj** ([@vivekraj2205](https://github.com/vivekraj2205))
-📩 **Email**: bangarivivekraj@gmail.com  
+## 🙌 Contributor
+ 
 - **Shubham Kumar Chaurasia** ([@shubham062004](https://github.com/shubham062004))  
-📩 **Email**: shubhamkumar081908@gmail.com
-
+- **Linkedin**: ([SHUBHAM KUMAR CHAURASIA](https://www.linkedin.com/in/shubham-kumar-chaurasia-721059286/))
+- **Email**: shubhamkumar081908@gmail.com
+  
 ---
 
 ## 🌟 Acknowledgements
